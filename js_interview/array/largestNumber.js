@@ -18,4 +18,12 @@ function larNum(input){
     return largest
 }
 
-console.log(larNum(Input))
+console.log(`for loop ${larNum(Input)}`)
+
+
+function larNumRue(input){
+   return input.reduce((max,current)=>{
+    return max>current?max:current
+   }) 
+}
+console.log(`User Reducer :- ${larNumRue(Input)}`)
