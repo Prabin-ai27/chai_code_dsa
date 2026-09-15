@@ -6,3 +6,15 @@ function smailNumMin(input){
 }
 
 smailNumMin(Input)
+
+
+function smallnumberFoorLoop(input){
+    let smallerNum=input[0]
+    for(let i=1;i<input.length;i++){
+        if(smallerNum>input[i]){
+            smallerNum=input[i]
+        }
+    }
+    return smallerNum
+}
+console.log(`Smaller number use for loop :- ${smallnumberFoorLoop(Input)}`)
