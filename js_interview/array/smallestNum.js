@@ -18,3 +18,12 @@ function smallnumberFoorLoop(input){
     return smallerNum
 }
 console.log(`Smaller number use for loop :- ${smallnumberFoorLoop(Input)}`)
+
+
+
+function smallNumRue(input){
+    return input.reduce((small,current)=>{
+        return small<current?small:current
+    })
+}
+console.log(`Smaller number use reduce :-${smallNumRue(Input)}`)
